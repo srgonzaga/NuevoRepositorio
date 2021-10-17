@@ -78,7 +78,7 @@ function showCategoriesList(){
             ((maxCount == undefined) || (maxCount != undefined && parseInt(category.cost) <= maxCount))){
 
             htmlContentToAppend += `
-            <a href="category-info.html" class="list-group-item list-group-item-action">
+            <a href="product-info.html" class="list-group-item list-group-item-action">
                 <div class="row">
                     <div class="col-3">
                         <img src="` + category.imgSrc + `" alt="` + category.description + `" class="img-thumbnail">
@@ -138,13 +138,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     document.getElementById("btn2").addEventListener("click", function(){
         sortAndShowCategories(ORDER_ASC_BY_COST);
     });
-    document.getElementById("sortByCost").addEventListener("click", function(){
-        sortAndShowCategories(ORDER_ASC_BY_COST);
-    });
-
-    document.getElementById("sortByCost2").addEventListener("click", function(){
-        sortAndShowCategories(ORDER_DESC_BY_COST);
-    });
+   
 
     document.getElementById("clearRangeFilter").addEventListener("click", function(){
         document.getElementById("rangeFilterCountMin").value = "";

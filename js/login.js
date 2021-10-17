@@ -9,6 +9,8 @@ const login = document.getElementById("btnlog");
     login.addEventListener("click", ()=> {
         localStorage.setItem("login", inputUsuario.value);
         location.href="index.html"
+    let usuario1 = {}; 
+    usuario1.nombre = inputUsuario
     });
 
 body.addEventListener('mousemove', (m) => {
